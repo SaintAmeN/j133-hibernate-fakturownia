@@ -17,7 +17,10 @@ public class Main {
                 new KomendaUsunFirma(),
                 new KomendaDodajKontrahent(),
                 new KomendaListaKontrahent(),
-                new KomendaUsunKontrahent()
+                new KomendaUsunKontrahent(),
+                new KomendaDodajFaktura(),
+                new KomendaListaFaktura(),
+                new KomendaUsunFaktura()
         );
 
         String komenda;
