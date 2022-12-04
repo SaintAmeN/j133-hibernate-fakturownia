@@ -1,9 +1,6 @@
 package pl.sda.j133.hibernate.fakturownia;
 
-import pl.sda.j133.hibernate.fakturownia.komenda.Komenda;
-import pl.sda.j133.hibernate.fakturownia.komenda.KomendaDodajFirme;
-import pl.sda.j133.hibernate.fakturownia.komenda.KomendaListaFirma;
-import pl.sda.j133.hibernate.fakturownia.komenda.KomendaUsunFirma;
+import pl.sda.j133.hibernate.fakturownia.komenda.*;
 
 import java.util.List;
 
@@ -17,7 +14,10 @@ public class Main {
         List<Komenda> listaKomend = List.of(
                 new KomendaDodajFirme(),
                 new KomendaListaFirma(),
-                new KomendaUsunFirma()
+                new KomendaUsunFirma(),
+                new KomendaDodajKontrahent(),
+                new KomendaListaKontrahent(),
+                new KomendaUsunKontrahent()
         );
 
         String komenda;
